@@ -16,7 +16,7 @@
 
       $(window).scroll(function() {
         calculatedOffset = $(window).scrollTop() - $('#vertical-video-ad000').parent().offset().top;
-        blurFilterVal = "blur("+Math.abs(calculatedOffset/20)+"px)";
+        blurFilterVal = "blur("+Math.abs(calculatedOffset/100)+"px)";
 
         if (calculatedOffset < 0) {
           $("#vertical-video-ad000").css('-webkit-filter',blurFilterVal);
