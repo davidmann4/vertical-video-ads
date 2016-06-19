@@ -1,0 +1,26 @@
+{
+  "name": "vertical-video-ads",
+  "version": "1.0.0",
+  "description": "vertical video ads for mobile phones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmann4/vertical-video-ads.git"
+  },
+  "keywords": [
+    "vertical",
+    "video",
+    "ads",
+    "advertising",
+    "mobile"
+  ],
+  "author": "David Mann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmann4/vertical-video-ads/issues"
+  },
+  "homepage": "https://github.com/davidmann4/vertical-video-ads#readme"
+}
