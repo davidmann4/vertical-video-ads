@@ -15,10 +15,16 @@
       //.vertical-video-ad video
 
       $(window).scroll(function() {
-      	calculatedOffset = $(window).scrollTop() - $('#vertical-video-ad000').parent().offset().top;
-      	if (calculatedOffset < 0) {
-      		$("#vertical-video-ad000").css("top",calculatedOffset);
-      	}      	
+        calculatedOffset = $(window).scrollTop() - $('#vertical-video-ad000').parent().offset().top;
+        blurFilterVal = "blur("+Math.abs(calculatedOffset/20)+"px)";
+
+        if (calculatedOffset < 0) {
+          $("#vertical-video-ad000").css('-webkit-filter',blurFilterVal);
+          $("#vertical-video-ad000").css("top",calculatedOffset);
+        }else{
+          $("#vertical-video-ad000").css('-webkit-filter',"blur(0px)");
+          $("#vertical-video-ad000").css("top",0);
+        }      	
       });
     });
   });
